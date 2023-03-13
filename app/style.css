@@ -1,0 +1,995 @@
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@300;400;500;900&display=swap");
+
+:root {
+    --white: #ffffff;
+    --pearlWhite: #fcebd5;
+    --darkGrey: #5a5a5a;
+    --redWine: #a16a5e;
+    --lighterRedWine: #a26a5e;
+    --pink: #e09686;
+    --lightPink: #fcebd5;
+    --babyPink: #edd5bb;
+    --orange: #d54c2e;
+    --blue: #1b59ac;
+    --green: #1bac6f;
+    --lightgrey: #e5e5e5;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 0;
+}
+
+/* lANDING PAGE */
+#landingPage {
+    height: 100vh;
+    background-color: var(--lightPink);
+    z-index: 9999;
+    max-width: 425px;
+    margin: 0 auto;
+}
+#landingPage nav {
+    background-color: var(--lightPink);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    padding: 12px 0;
+    font-family: "Reenie Beanie", cursive;
+    color: var(--redWine);
+}
+
+#landingPage nav p {
+    font-size: 30px;
+}
+
+#landingPage .logo {
+    width: 160px;
+    padding: 10% 0;
+    position: relative;
+}
+
+.logo-part,
+.menu-part {
+    background-color: var(--lightPink);
+}
+
+.menu-part {
+    position: relative;
+}
+
+.join-as-artist {
+    background-color: var(--babyPink);
+    clip-path: polygon(100% 0, 100% 38%, 100% 70%, 0 27%, 0 0);
+}
+
+.join-as-visitor {
+    background-color: var(--redWine);
+    clip-path: polygon(100% 100%, 100% 70%, 100% 70%, 0 27%, 0 100%);
+    position: absolute;
+    top: 0%;
+    left: 17.2%;
+}
+
+.join-as-artist,
+.join-as-visitor {
+    width: 280px;
+    height: 400px;
+}
+
+.join-as-artist:hover,
+.join-as-visitor:hover {
+    transform: scale(1.05);
+}
+
+.menu-part p {
+    font-family: "Reenie Beanie";
+    font-size: 48px;
+    line-height: 45px;
+}
+
+.select-artist-wrapper {
+    position: relative;
+}
+
+.select-artist-dropdown {
+    background-color: var(--babyPink);
+    border: 1px solid var(--redWine);
+    border-radius: 2px;
+    color: var(--redWine);
+    height: 27px;
+    padding: 1px 5px;
+    font-size: 13px;
+    margin-top: 1%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    z-index: 111;
+    max-width: 65%;
+    margin-right: 6%;
+}
+
+.fa-caret-down {
+    position: absolute;
+    top: 21%;
+    right: 9%;
+    color: var(--redWine);
+    font-size: 20px;
+    z-index: 1111;
+    width: 10%;
+}
+
+.p-artist {
+    color: var(--redWine);
+    margin-top: 14%;
+}
+
+.p-visitor {
+    color: var(--pearlWhite);
+    margin-top: 114%;
+}
+
+.select-artist-dropdown:focus,
+.select-artist-dropdown:hover {
+    outline: 1px solid var(--pearlWhite);
+}
+
+.select-artist-dropdown option {
+    background-color: var(--babyPink);
+    color: var(--redWine);
+    width: auto;
+}
+
+.select-artist-dropdown option:hover,
+.select-artist-dropdown option:focus {
+    background-color: var(--pink);
+}
+
+/* HEADER */
+header {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-family: "Reenie Beanie", cursive;
+    font-size: 30px;
+    color: var(--redWine);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--lightPink);
+    height: 72px;
+    z-index: 99999;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+.logoPic {
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    top: -9%;
+    left: 4%;
+    z-index: 2222;
+}
+
+.rectangle {
+    left: 10.5%;
+    height: 59.5px;
+    width: 50px;
+    background-color: var(--pearlWhite);
+    z-index: 2220;
+    position: absolute;
+    top: 23%;
+}
+
+.artistNameHeader {
+    margin-right: 27%;
+}
+
+.titleHeader {
+    margin-right: 6%;
+}
+
+#gavel,
+.hamburgerIcon {
+    font-size: 33px;
+    padding-right: 20px;
+}
+
+.logoHeader {
+    width: 105px;
+}
+
+.titleHeader,
+#gavel {
+    margin-top: 1.5%;
+}
+
+#artistNameHeader {
+    margin-top: 2.5%;
+}
+
+#gavel {
+    color: var(--redWine);
+}
+
+.hamburgerIcon {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.hamburger-menu {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+    background-color: var(--redWine);
+    z-index: 400;
+    position: fixed;
+    top: 72px;
+    max-width: 425px;
+    margin-left: 628px;
+}
+
+.hamburger-menu a {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: 3px;
+    color: var(--lightPink);
+}
+
+header p {
+    flex-grow: 1;
+    padding-left: 5px;
+}
+
+/* VISITOR HOME PAGE */
+#visitorHomePage {
+    height: calc(100vh - 74px);
+    background-color: var(--babyPink);
+    display: flex;
+    flex-direction: column;
+    padding-top: 72px;
+    max-width: 425px;
+    margin: 0 auto;
+}
+.banner {
+    height: 145px;
+    background-color: var(--babyPink);
+}
+.banner_inner {
+    background: url(Images/bricks.jpg);
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner_inner p {
+    color: var(--redWine);
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    padding-left: 17px;
+    font-weight: 500;
+    line-height: 35.16px;
+}
+
+.btn-find_out {
+    background-color: var(--redWine);
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    display: inline-block;
+    padding: 4px 15px;
+}
+
+.pictures {
+    background-color: var(--babyPink);
+    overflow: hidden;
+    position: relative;
+    padding: 25px 0;
+}
+.pictures-content {
+    animation: scrolling 20s linear infinite;
+    padding-bottom: 25px;
+}
+
+.pictures-content2 {
+    animation: scrolling2 20s linear infinite;
+    padding-bottom: 25px 0;
+}
+
+@keyframes scrolling {
+    100% {
+        transform: translateX(-50vw);
+    }
+}
+
+@keyframes scrolling2 {
+    0% {
+        transform: translateX(-50vw);
+    }
+}
+
+.pictures img {
+    width: 200px;
+    height: 140px;
+}
+
+.pictures-content .picDiv:not(:last-child) {
+    margin-right: 40px;
+}
+
+.pictures-content2 .picDiv:not(:last-child) {
+    margin-left: 40px;
+}
+
+.carousel {
+    background-color: var(--lightPink);
+    padding: 30px;
+    font-size: 9px;
+    height: 32vh;
+}
+
+.img-content {
+    border-right: 1px solid var(--redWine);
+}
+
+.text-content,
+.img-content {
+    padding: 35px 37px;
+    height: 200px;
+}
+
+.text {
+    background-color: var(--pink);
+    padding: 20px 5px 5px 5px;
+    position: relative;
+    height: 130px;
+}
+
+.text p {
+    color: var(--white);
+}
+
+.text img {
+    width: 40%;
+    border: 2px solid var(--redWine);
+    position: absolute;
+    top: -25%;
+    left: 30%;
+}
+
+.text-content p {
+    padding: 5px;
+    color: var(--redWine);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-image: none;
+    width: none;
+    height: none;
+}
+
+.carousel-control-next-icon {
+    margin-left: 30px;
+}
+
+/* VISITOR LISTING PAGE */
+#visitorListingPage {
+    background-color: var(--babyPink);
+    padding-top: calc(37px + 72px);
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.listing {
+    background-color: var(--babyPink);
+}
+
+.listing .item-card:not(:first-child) {
+    margin-top: 37px;
+}
+
+.listing .item-card.sand {
+    background-color: var(--lightPink);
+    color: var(--lighterRedWine);
+}
+
+.item-card.redWine {
+    background-color: var(--lighterRedWine);
+    color: var(--pearlWhite);
+}
+
+.item-card img {
+    height: 165px;
+    padding: 0;
+}
+
+.description .artist-name {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 30px;
+}
+
+.description .item-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.description .item-info {
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    line-height: 12.89px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.description .price {
+    padding: 3px 8px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+.sand .price {
+    background-color: var(--lighterRedWine);
+    color: var(--pearlWhite);
+}
+
+.redWine .price {
+    background-color: var(--lightPink);
+    color: var(--lighterRedWine);
+}
+
+#filterIcon i,
+#confirmIcon i {
+    color: var(--lightPink);
+    font-size: 50px;
+    display: block;
+}
+
+#filterIcon,
+#confirmIcon {
+    background-color: var(--orange);
+    padding: 3px 5px;
+    z-index: 10;
+    position: fixed;
+    bottom: 5%;
+    right: 38%;
+    border-radius: 2px;
+    box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.26);
+}
+
+#visitorListingPage #filterIcon a {
+    color: var(--lightPink);
+}
+
+/* VISITOR FILTER PAGE  */
+#visitorFilterPage {
+    background-color: var(--redWine);
+    color: var(--lightPink);
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    padding-top: 72px;
+    max-width: 425px;
+    margin: 0 auto;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.filterTitle,
+.newItemTitle {
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 14px;
+}
+
+#cross {
+    color: var(--lightPink);
+}
+
+.fa-xmark {
+    font-size: 50px;
+}
+
+.filterSections {
+    border-bottom: 2px solid var(--lightPink);
+    border-radius: 2px;
+    margin: 0 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.inputs,
+.chooseInput {
+    background-color: var(--redWine);
+    border: 1px solid var(--lightPink);
+    border-radius: 2px;
+    color: var(--lightPink);
+    padding: 3px 10px;
+    font-size: 15px;
+    width: 105px;
+    margin: 20px 0;
+    font-weight: 300;
+}
+
+.inputs::placeholder {
+    color: var(--babyPink);
+    font-weight: 300;
+}
+
+.labelPrice {
+    margin-right: 5px;
+    font-weight: 300;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+/* ARTIST HOME PAGE */
+#artistHomePage {
+    height: calc(100vh - 72px);
+    padding-top: 72px;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.board {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--babyPink);
+    color: var(--lightPink);
+    padding: 10px;
+}
+
+.balance {
+    background-color: var(--lighterRedWine);
+    width: 48%;
+}
+
+#artistHomePage .title {
+    margin-top: 0;
+}
+
+.analyse {
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.bidPart {
+    background-color: var(--orange);
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.incomeHistory {
+    background-color: var(--lightPink);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.incomeHistory .title {
+    color: var(--redWine);
+    text-transform: none;
+}
+
+.incomeHistory .btn-find_out {
+    width: 30%;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+#sevenDays,
+#thirtyDays,
+#fourteenDays {
+    background-color: var(--redWine);
+    color: var(--lightPink);
+}
+
+#sevenDays:focus,
+#thirtyDays:focus,
+#fourteenDays:focus {
+    font-weight: 700;
+    background-color: var(--orange);
+    color: var(--lightPink);
+}
+
+.incomeHistory {
+    height: calc(100vh - 73px - 303px);
+}
+
+.display {
+    height: 80px;
+}
+
+.chart {
+    height: calc(427px - 80px);
+}
+
+/* ARTIST ITEMS PAGE */
+
+#artistItemsPage {
+    background-color: var(--babyPink);
+    color: var(--redWine);
+    padding-top: calc(20px + 72px);
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.addNewItem {
+    background-color: var(--lightPink);
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.addNewItem .inner {
+    border: 2px dashed var(--redWine);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.item-date {
+    font-size: 9px;
+    color: var(--pink);
+    margin-bottom: 12px;
+}
+
+.btn-actions {
+    background-color: var(--redWine);
+    padding: 10px 13px;
+}
+
+.btn-actions .btn {
+    padding: 6.5px 17.5px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    line-height: 14px;
+    font-weight: 700;
+    border-radius: 2px;
+    color: var(--lightPink);
+}
+
+.btn-actions .btn:focus {
+    color: var(--lightPink);
+}
+
+#auction-btn {
+    background-color: var(--blue);
+}
+
+#auction-btn:focus {
+    color: var(--darkGrey);
+}
+
+#unpublish-btn {
+    background-color: var(--green);
+}
+
+#publish-btn {
+    background-color: var(--lightgrey);
+    color: var(--darkGrey);
+}
+
+#remove-btn {
+    background-color: var(--orange);
+}
+
+#edit-btn {
+    background-color: var(--pearlWhite);
+    color: #a16a5e;
+}
+
+#artistItemsPage .item-card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* ARTIST - ADD NEW ITEM PAGE */
+#artistAddNewItemPage,
+#artistCaptureImage {
+    background-color: var(--redWine);
+    color: var(--lightPink);
+    font-family: "Roboto", sans-serif;
+    padding: 25px 15px;
+    padding-top: calc(25px + 72px);
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.newItemTitle {
+    margin-left: 0;
+}
+
+#isPublished {
+    margin-left: 10px;
+}
+
+#artistAddNewItemPage .title {
+    color: var(--babyPink);
+}
+
+#artistAddNewItemPage .label {
+    margin-top: 0;
+}
+
+.input,
+#description {
+    background-color: var(--redWine);
+    border: 1px solid var(--babyPink);
+}
+
+#artistAddNewItemPage span {
+    text-transform: none;
+}
+
+.fa-camera {
+    font-size: 60px;
+}
+
+.snapshot {
+    border: 1px dashed var(--babyPink);
+    height: 300px;
+}
+
+.snapshot p {
+    margin-top: 10px;
+}
+
+#artistAddNewItemPage .btn {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 21px;
+    font-weight: 700;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+#addNewItem-btn {
+    background-color: var(--orange);
+    color: var(--pearlWhite);
+}
+
+#cancel-btn {
+    background-color: var(--lightgrey);
+    color: var(--darkGrey);
+}
+
+.box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 7%;
+    left: 35%;
+    height: 20px;
+    width: 20px;
+    background-color: var(--babyPink);
+    border-radius: 2px;
+}
+
+.box input:checked ~ .checkmark {
+    background-color: var(--babyPink);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.box input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.box .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+/* ARTIST-CAPTURE IMAGE */
+#artistCaptureImage {
+    height: calc(100vh);
+    padding-top: 72px;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.camera {
+    height: 87%;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#artistCaptureImage .fa-camera {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.camera img,
+.camera canvas {
+    display: none;
+}
+
+/* AUCTION PAGE */
+#auctionPage {
+    min-height: calc(100vh);
+    padding-top: 72px;
+    color: var(--lightPink);
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(
+            rgba(128, 123, 123, 0.9),
+            rgba(216, 204, 204, 0.7)
+        ),
+        url(Images/bid.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+.auction-card {
+    background-color: var(--lightPink);
+    color: var(--darkGrey);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.auction-card .artist-name {
+    font-size: 28px;
+}
+
+.auction-card .price {
+    border: 1px solid var(--lighterRedWine);
+}
+
+.auction-title {
+    color: var(--darkGrey);
+    font-weight: 500;
+}
+
+.auction-title span {
+    font-weight: 900;
+}
+
+.info {
+    padding: 0 10px;
+}
+
+.time {
+    color: #b93519;
+    width: 32%;
+    padding-left: 0;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.auction-time {
+    color: #7c2e1d;
+    font-weight: 500;
+    width: 54%;
+}
+
+.wrap {
+    height: calc(100vh - 72px - 257.38px);
+
+    padding-top: 10px;
+}
+
+#bidAmount {
+    outline: none;
+    background-color: #e4e3e3;
+    border: 1px solid #6c757d;
+}
+
+.input-group-text {
+    width: 40%;
+    margin-right: 5px;
+}
+
+#biddings {
+    padding-left: 0;
+    color: var(--darkGrey);
+    list-style: none;
+    margin-top: 5px;
+}
+
+#biddings li {
+    margin-left: 21%;
+}
+
+.bid-done {
+    font-weight: 900;
+    font-size: 18px;
+    width: 55%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.bidding button {
+    cursor: pointer;
+}
+
+.bidding .start {
+    width: 30%;
+    background-color: #bbb1b1;
+}
+
+.bid {
+    margin-top: 0;
+    background-color: #adb0b3;
+    color: #b93519;
+    font-weight: 900;
+}
+
+#auctionPage .row > * {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.noAuctionMsg {
+    text-align: center;
+    margin-top: 50%;
+    color: #5a5a5a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.noAuctionMsg p {
+    font-size: 15px;
+    color: grey;
+}

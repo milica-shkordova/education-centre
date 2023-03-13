@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Street Artist</title>
+        <!-- Vendor scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/3dcc43e145.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <!-- LANDING PAGE -->
+    <section id="landingPage">
+        <nav class="row text-center">
+            <p>Street ARTist</p>
+        </nav>
+        <div class="row logo-part">
+            <div class="col-12 text-center">
+                <img src="Images/logo.png" alt="logo" class="logo" />
+            </div>
+        </div>
+        <div class="row menu-part justify-content-center">
+            <div class="col-6 join-as-artist text-center">
+                <p class="p-artist">Join as Artist</p>
+                <div
+                    class="row justify-content-end select-artist-wrapper"
+                    id="selectArtist"
+                >
+                    <select name="selectArtist" class="select-artist-dropdown">
+                        <option value="">Choose</option>
+                    </select>
+                    <i class="fa-sharp fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="col-6 join-as-visitor text-center">
+                <p class="p-visitor">Join as Visitor</p>
+            </div>
+        </div>
+    </section>
+    <!-- header visitor-->
+    <div class="header visitor"></div>
+    <!-- header-artist -->
+    <div class="header artist"></div>
+    <!-- VISITOR-HOME PAGE -->
+    <section id="visitorHomePage" class="containter-fluid">
+        <div class="row banner">
+            <div class="col-12 banner_inner d-flex align-items-center">
+                <div class="col-6">
+                    <p>Looking for masterpiece?</p>
+                </div>
+                <div class="col-6 text-end px-4">
+                    <a href="#visitorListingPage" class="btn btn-find_out"
+                        >Find out now!</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="row pictures d-flex">
+            <div class="col-12 pictures-content d-flex h-100">
+                <div class="picDiv">
+                    <a href="#visitorListingPage"
+                        ><img
+                            src="Images/64cd5ec4ce2a2b0d288c8f752f44029f.jpg"
+                            alt="6"
+                            class="pic"
+                        />
+                    </a>
+                </div>
+
+                <div class="picDiv">
+                    <a href="#visitorListingPage">
+                        <img
+                            src="Images/aaf6c20ec8ab84ea787d9ffb45bd46ec.jpg"
+                            alt="4"
+                            class="pic"
+                        />
+                    </a>
+                </div>
+
+                <div class="picDiv">
+                    <a href="#visitorListingPage">
+                        <img
+                            src="Images/2f79b9bf09f4ce1dbb06cf517a950458.jpg"
+                            alt="1"
+                            class="pic"
+                        />
+                    </a>
+                </div>
+                <div class="picDiv">
+                    <a href="#visitorListingPage"
+                        ><img
+                            src="Images/14a3df221e01396822d0c60a91a37024.jpg"
+                            alt="2"
+                            class="pic"
+                    /></a>
+                </div>
+                <div class="picDiv">
+                    <a href="#visitorListingPage">
+                        <img
+                            src="Images/b0b3adb2558a8f3fb7dd37a56c188503.jpg"
+                            alt="5"
+                            class="pic"
+                    /></a>
+                </div>
+                <div class="picDiv">
+                    <a href="#visitorListingPage">
+                        <img
+                            src="Images/2b605f6eb0b10203e29f77fab7426edf.jpg"
+                            alt="3"
+                            class="pic"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 pictures-content2 d-flex h-100">
+                <div class="picDiv">
+                    <a href="#visitorListingPage"
+                        ><img
+                            src="Images/64cd5ec4ce2a2b0d288c8f752f44029f.jpg"
+                            alt="1"
+                            class="pic"
+                    /></a>
+                </div>
+                <div class="picDiv">
+                    <a href="#visitorListingPage"
+                        ><img
+                            src="Images/b0b3adb2558a8f3fb7dd37a56c188503.jpg"
+                            alt="2"
+                            class="pic"
+                    /></a>
+                </div>
+                <div class="picDiv">
+                    <a href="#visitorListingPage"
+                        ><img
+                            src="Images/aaf6c20ec8ab84ea787d9ffb45bd46ec.jpg"
+                            alt="3"
+                            class="pic"
+                    /></a>
+                </div>
+                <div class="picDiv">
+                    <a href="#visitorListingPage"
+                        ><img
+                            src="Images/2b605f6eb0b10203e29f77fab7426edf.jpg"
+                            alt="4"
+                            class="pic"
+                    /></a>
+                </div>
+                <div class="picDiv">
+                    <a href="#visitorListingPage">
+                        <img
+                            src="Images/14a3df221e01396822d0c60a91a37024.jpg"
+                            alt="5"
+                            class="pic"
+                    /></a>
+                </div>
+                <div class="picDiv">
+                    <a href="#visitorListingPage"
+                        ><img
+                            src="Images/2f79b9bf09f4ce1dbb06cf517a950458.jpg"
+                            alt="6"
+                            class="pic"
+                    /></a>
+                </div>
+            </div>
+        </div>
+        <div
+            id="carouselExampleIndicators"
+            class="row carousel carousel-fade d-flex align-items-center justify-content-between"
+        >
+            <ol class="carousel-indicators">
+                <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                ></li>
+                <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                ></li>
+                <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                ></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div
+                            class="col-6 img-content text-center d-flex justify-content-between align-items-center"
+                        >
+                            <div class="text">
+                                <img
+                                    src="Images/pic1.png"
+                                    alt="artist-quote"
+                                    class="rounded-circle"
+                                />
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quidem odio blanditiis
+                                    autem dignissimos quaerat repellat?
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-6 text-content d-flex justify-content-center align-items-center"
+                        >
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quidem odio blanditiis autem
+                                dignissimos quaerat repellat?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div
+                            class="col-6 img-content text-center d-flex justify-content-between align-items-center"
+                        >
+                            <div class="text">
+                                <img
+                                    src="Images/1-1.jpeg"
+                                    alt="artist-quote"
+                                    class="rounded-circle"
+                                />
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Repellat, rem! Lorem ipsum
+                                    dolor sit amet. Emut hello lorem.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-6 text-content d-flex justify-content-center align-items-center"
+                        >
+                            <p>
+                                Lorem ipsum dolor uidem odio blanditiis autem
+                                dignissimos quaerat repellat? Lorem, ipsum
+                                dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div
+                            class="col-6 img-content text-center d-flex justify-content-between align-items-center"
+                        >
+                            <div class="text">
+                                <img
+                                    src="Images/11.jpeg"
+                                    alt="artist-quote"
+                                    class="rounded-circle"
+                                />
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quidem odio blanditiis
+                                    autem dignissimos quaerat repellat?
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="col-6 text-content d-flex justify-content-center align-items-center"
+                        >
+                            <p>
+                                Quidem odio blanditiis autem dignissimos quaerat
+                                repellat?Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon d-flex align-items-center"
+                    aria-hidden="true"
+                >
+                    <img src="Images/arrow-left.png" alt="arrow-prev" />
+                </span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon d-flex align-items-center"
+                    aria-hidden="true"
+                >
+                    <img src="Images/arrow-right.png" alt="arrow-next" />
+                    ></span
+                >
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- VISITOR LISTING -->
+    <section id="visitorListingPage" class="containter-fluid">
+        <div class="listing"></div>
+        <span id="filterIcon">
+            <a href="#visitorFilterPage"><i class="fa-solid fa-sliders"></i></a>
+        </span>
+    </section>
+    <!-- VISITOR FILTER PAGE -->
+    <section id="visitorFilterPage" class="containter-fluid">
+        <div class="row d-flex align-items-center">
+            <div class="col-10 p-0">
+                <p class="filterTitle">Filter by</p>
+            </div>
+            <span class="col-2 text-end">
+                <a href="#visitorListingPage" id="cross"
+                    ><i class="fa-sharp fa-solid fa-xmark"></i
+                ></a>
+            </span>
+        </div>
+        <form>
+            <div
+                class="row filterSections d-flex justify-content-start align-items-center"
+            >
+                <p class="col-12 title">By item title</p>
+                <input
+                    type="text"
+                    class="col-12 inputs"
+                    placeholder="Label"
+                    id="itemTitle"
+                />
+            </div>
+            <div
+                class="row filterSections d-flex justify-content-start align-items-center"
+            >
+                <p class="col-12 title">By artist</p>
+                <select
+                    name="artistSelect"
+                    id="artistSelect"
+                    class="chooseInput"
+                >
+                    <option value="">Choose</option>
+                </select>
+            </div>
+            <div
+                class="row filterSections d-flex justify-content-start align-items-center"
+            >
+                <p class="col-12 title">By price</p>
+                <div class="row p-0 m-0">
+                    <div class="col-6 p-0">
+                        <label for="minPrice" class="labelPrice">Min:</label>
+                        <input
+                            type="text"
+                            class="col-12 inputs"
+                            placeholder="Label"
+                            id="minPrice"
+                        />
+                    </div>
+                    <div class="col-6 text-end p-0">
+                        <label for="maxPrice" class="labelPrice">Max:</label>
+                        <input
+                            type="text"
+                            class="col-12 inputs"
+                            placeholder="Label"
+                            id="maxPrice"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div
+                class="row filterSections d-flex justify-content-start align-items-center"
+            >
+                <p class="col-12 title">By type</p>
+                <select name="typeSelect" id="typeSelect" class="chooseInput">
+                    <option value="">Choose</option>
+                </select>
+            </div>
+        </form>
+        <span id="confirmIcon">
+            <a href="#visitorListingPage">
+                <i class="fa-solid fa-check"></i>
+            </a>
+        </span>
+    </section>
+    <!-- ARTIST HOME PAGE -->
+    <section id="artistHomePage" class="containter-fluid">
+        <div
+            class="row board d-flex justify-content-between align-items-center m-auto"
+        >
+            <div class="col-6 balance p text-center p-3">
+                <p class="title">Total items sold</p>
+                <p id="totalItemsSold" class="analyse">0/0</p>
+            </div>
+            <div class="col-6 balance text-center p-3">
+                <p class="title">Total income</p>
+                <p id="totalIncome" class="analyse">$0</p>
+            </div>
+            <div class="col-12 bidPart text-center">
+                <p class="title">live auctioning item</p>
+                <p id="currentBid" class="analyse">$0</p>
+                <p class="title">current bid</p>
+            </div>
+        </div>
+        <div class="row incomeHistory d-block">
+            <div class="col-12 p-0 display">
+                <div class="row d-flex justify-content-between m-auto p-0">
+                    <p class="title">Display my income for last</p>
+                    <button class="btn btn-find_out" id="sevenDays">
+                        7 days
+                    </button>
+                    <button class="btn btn-find_out" id="fourteenDays">
+                        14 days
+                    </button>
+                    <button class="btn btn-find_out" id="thirtyDays">
+                        30 days
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 chart">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </section>
+    <!-- ARTIST ITEMS PAGE -->
+    <section id="artistItemsPage">
+        <div class="addNewItem">
+            <div class="inner text-center">
+                <a href="#artistAddNewItemPage" class="title">+ Add new item</a>
+            </div>
+        </div>
+        <div class="artist-items"></div>
+    </section>
+    <!-- ARTIST ADD NEW ITEM PAGE -->
+    <section id="artistAddNewItemPage">
+        <form class="form" id="addEditNewItem">
+            <div class="row d-flex align-items-center">
+                <div class="col-7">
+                    <p class="newItemTitle">Add new Item</p>
+                </div>
+                <div class="col-5 d-flex justify-content-end">
+                    <label for="isPublished" class="title label"
+                        >Is published</label
+                    >
+                    <label class="box">
+                        <input type="checkbox" id="isPublished" />
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-12">
+                    <label for="title" class="title">Title</label>
+                    <input
+                        type="text"
+                        id="title"
+                        class="input w-100"
+                        required
+                    />
+                    <label for="description" class="description"
+                        >Description</label
+                    >
+                    <textarea
+                        id="description"
+                        cols="30"
+                        rows="4"
+                        class="w-100"
+                    ></textarea>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <label for="type" class="type">Type</label>
+                    <input type="text" id="type" class="input w-100" required />
+                </div>
+                <div class="col-6">
+                    <label for="price" class="price">Price</label>
+                    <input type="tel" id="price" class="input w-100" required />
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-12">
+                    <label for="url" class="imageURL">Image URL</label>
+                    <input type="text" id="url" class="input w-100" />
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-5 text-center my-1">
+                    <span class="title">or</span>
+                </div>
+            </div>
+
+            <div
+                class="snapshot d-flex justify-content-center align-items-center flex-column mx-2"
+            >
+                <i class="fa-sharp fa-solid fa-camera"></i>
+                <p class="title">Take a snapshot</p>
+            </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-6">
+                    <button type="submit" class="btn w-100" id="addNewItem-btn">
+                        Add New Item
+                    </button>
+                </div>
+                <div class="col-6">
+                    <a href="#artistItemsPage" class="btn w-100" id="cancel-btn"
+                        >Cancel</a
+                    >
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- ARTIST CAPTURE IMAGE -->
+    <section id="artistCaptureImage">
+        <div class="row camera align-items-center mt-3">
+            <div class="col-12 w-100 h-100">
+                <video
+                    id="cameraLive"
+                    autoplay
+                    width="100%"
+                    height="100%"
+                ></video>
+                <canvas id="capture"></canvas>
+            </div>
+        </div>
+        <div class="row">
+            <i class="fa-sharp fa-solid fa-camera text-center captureBtn"></i>
+        </div>
+    </section>
+    <!-- AUCTION PAGE -->
+    <section id="auctionPage"></section>
+    <body>
+        <!-- data -->
+        <script src="../data/data.js"></script>
+
+        <!-- myScripts -->
+        <script src="../app/Pages/landingPage.js"></script>
+        <script src="../app/Pages/visitorListing.js"></script>
+        <script src="../app/Pages/visitorFilterPage.js"></script>
+        <script src="../app/Pages/artistHomePage.js"></script>
+        <script src="../app/Pages/artistItemsPage.js"></script>
+        <script src="../app/Pages/artistAddNewItemPage.js"></script>
+        <script src="../app/Pages/artistCaptureImage;.js"></script>
+        <script src="../app/Pages/auctionPage.js"></script>
+        <script defer src="./index.js"></script>
+
+        <!-- bootstrap scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
